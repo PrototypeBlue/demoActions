@@ -265,7 +265,7 @@ Resources:
                    Federated: !Ref IDCProvider
                  Condition:
                    StringLike:
-                     token.actions.githubusercontent.com:aud:  "sts.amazonaws.com"
+                     token.actions.githubusercontent.com:sub:  "sts.amazonaws.com"
           MaxSessionDuration: 3600
           Description: "Github Actions role"
           Policies:
